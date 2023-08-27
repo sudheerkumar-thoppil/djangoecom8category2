@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regster</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="" method="POST">
+    {% csrf_token %}
+        
+    <div class="register">
+
+        <h1> Registration Form </h1>
+        <label for="">Name</label>
+        <input id="first_name" type="text" placeholder="Your Name..."><br>
+        <label for="">Second Name</label>
+        <input id="second_name" type="text" name='second_name' ''''''placeholder="second name..."><br>
+        <label for="">Username</label>
+        <input id="username" type="text" name='username' placeholder="User Name..."><br>
+        <label for="">Email</label>
+        <input id="email" type="email" placeholder="examble@gmail.com"><br>
+        <label for="">Password</label>
+        <input id="password1" type="password" placeholder="password"><br>
+        <label for="">Confirm</label>
+        <input id="password2" type="password" placeholder="Confirm password"> <br>
+            
+        <input type="submit" ></input>
+    </div>
+
+    </form>
+    
+    
+</body>
+</html>
